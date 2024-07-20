@@ -1,6 +1,6 @@
 #include <Kernel/Log.h>
-
 #include <cstdint>
+#include <Hooks.h>
 
 void SACPrintLoaded(uintptr_t entry)
 {
@@ -19,10 +19,12 @@ void SACPrintUnloaded()
 bool DriverMain(uintptr_t entry)
 {
 	SACPrintLoaded(entry);
+	SACHooksInstall();
 	return true;
 }
 
 void DriverShootdown()
 {
+	SACHooksUninstall();
 	SACPrintUnloaded();
 }
