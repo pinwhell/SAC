@@ -1,0 +1,2 @@
+call UnloadDriverBst64.bat
+call LoadDriverBst64.bat

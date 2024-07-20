@@ -1,0 +1,1 @@
+KRHCLI -p HD-Player.exe --load ./build/Release_x86/src/libSACDrv.so
