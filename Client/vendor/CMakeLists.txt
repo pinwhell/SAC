@@ -1,0 +1,1 @@
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../Shared ${CMAKE_CURRENT_BINARY_DIR}/Shared)
